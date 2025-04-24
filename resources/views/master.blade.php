@@ -16,9 +16,23 @@
     {{View::make('footer')}}
 </body>
 <style>
-    .custom-login{
+    .custom-login
+    {
         height: 450px;
         padding-top: 100px;
+    }
+    img.slider-img
+    {
+        height: 400px !important;
+    }
+    .custom-product
+    {
+        height: 470px;
+    }
+    .slider-text
+    {
+        color: black;
+        background-color: #1f7a9f1c !important;
     }
 </style>
 </html>
