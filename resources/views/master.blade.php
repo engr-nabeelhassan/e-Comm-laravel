@@ -23,16 +23,33 @@
     }
     img.slider-img
     {
-        height: 400px !important;
+        height: 250px !important;
     }
     .custom-product
     {
-        height: 470px;
+        height: 480px;
     }
     .slider-text
     {
         color: black;
         background-color: #1f7a9f1c !important;
+    }
+    .trending-img
+    {
+        height: 100px;
+    }
+    .trending-item
+    {
+        float: left;
+        width: 20%;
+    }
+    .trending-wrapper
+    {
+        margin: 20px;
+    }
+    .detail-img
+    {
+        height: 200px;
     }
 </style>
 </html>
