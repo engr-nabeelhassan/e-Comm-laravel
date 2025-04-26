@@ -51,5 +51,9 @@
     {
         height: 200px;
     }
+    .search-box
+    {
+        width: 500px;
+    }        
 </style>
 </html>
