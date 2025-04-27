@@ -6,35 +6,36 @@
                 <tbody>
                     <tr>
                         <td>Amount</td>
-                        <td>$ {{$total}}</td>
+                        <td>Rs. {{$total}}</td>
                     </tr>
                     <tr>
                         <td>Tax</td>
-                        <td>$ 0</td>
+                        <td>Rs. 0</td>
                     </tr>
                     <tr>
                         <td>Delivery</td>
-                        <td>$ 10</td>
+                        <td>Rs. 200</td>
                     </tr>
                     <tr>
                         <td>Total Amount</td>
-                        <td>$ {{$total+10}}</td>
+                        <td>Rs. {{$total+200}}</td>
                     </tr>
                 </tbody>
             </table>
             <div>
-            <form>
+            <form action="/orderplace" method="POST">
+                @csrf 
   <div class="mb-3">
-    <textarea input type="email" placeholder="Enter Your Address" class="form-control"> </textarea>
+    <textarea name="address" placeholder="Enter Your Address" class="form-control"> </textarea>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Payment Method</label>
     <br>
-    <input type="radio"  name="payment"><span style="margin-left:8px;">Cash On Delivery</span>
+    <input type="radio" value="cash" name="payment"><span style="margin-left:8px;">Cash On Delivery</span>
     <br>
-    <input type="radio" name="payment"><span style="margin-left:8px;">Payments For Banks</span>
+    <input type="radio" value="cash" name="payment"><span style="margin-left:8px;">Payments For Banks</span>
     <br>
-    <input type="radio" name="payment"><span style="margin-left:8px;">Payment Visa Cards</span>
+    <input type="radio" value="cash" name="payment"><span style="margin-left:8px;">Payment Visa Cards</span>
   </div>
   <button type="submit" class="btn btn-primary">Buy Now</button>
 </form>
